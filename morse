@@ -1,0 +1,52 @@
+int led = D7;
+void setup() {
+    pinMode(led, OUTPUT);
+}
+
+void dot(){
+    digitalWrite(led, HIGH);
+    delay(500);
+    digitalWrite(led, LOW);
+    delay(500);
+}
+void line(){
+    digitalWrite(led, HIGH);
+    delay(1000);
+    digitalWrite(led, LOW);
+    delay(500);
+}
+void letterEnd(){ //used to signify the end of a letter
+    digitalWrite(led, LOW);
+    delay(1000);
+}
+void wordEnd(){ //used to signify the end of a word
+    delay(1500);
+}
+
+void lael(){
+//L
+    dot();
+    line();
+    dot();
+    dot();
+    end();
+//A
+    dot();
+    line();
+    end();
+//E
+    dot();
+    end();
+//L
+    dot();
+    line();
+    dot();
+    dot();
+    end();
+//end
+    wordEnd();
+}
+
+void loop() {
+    lael();
+}
