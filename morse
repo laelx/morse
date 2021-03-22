@@ -29,20 +29,20 @@ void lael(){
     line();
     dot();
     dot();
-    end();
+    letterEnd();
 //A
     dot();
     line();
-    end();
+    letterEnd();
 //E
     dot();
-    end();
+    letterEnd();
 //L
     dot();
     line();
     dot();
     dot();
-    end();
+    letterEnd();
 //end
     wordEnd();
 }
